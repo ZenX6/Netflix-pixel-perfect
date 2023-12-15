@@ -1,0 +1,129 @@
+/* Base styles and resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    color: #e74c3c;
+    font-size: 1.8rem;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+nav a:hover {
+    color: #e74c3c;
+}
+
+/* Search bar styles */
+.search-bar {
+    position: relative;
+}
+.search-bar input[type="text"] {
+    padding: 0.5rem 2rem;
+    width: 250px;
+    border: none;
+    border-radius: 1rem;
+}
+.search-bar i.fas.fa-search {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+/* Category styles */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+.category {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    background: #fff;
+}
+.category i {
+    margin-right: 0.5rem;
+    color: #e74c3c;
+}
+
+/* Event styles */
+.events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+.event-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    width: calc(33% - 2rem);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.event-card h3 {
+    color: #333;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+.event-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
+/* Button styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button:hover {
+    background: #c0392b;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: white;
+}
